@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tournament Schedule 2025 Sapporo #01">
+    <title>Tournament Schedule</title>
+
+    <!-- セキュリティとブラウザ互換性 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:;">
+
+    <!-- PWA対応 -->
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- リソースの事前読み込み -->
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preload" as="script" href="https://unpkg.com/react@18/umd/react.production.min.js">
+
+    <!-- 必要なライブラリ -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.includes,Promise,Object.assign"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/lucide-react@0.263.1/dist/umd/lucide-react.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- カスタムスタイル -->
+    <link rel="stylesheet" href="styles/tailwind.css">
+
+    <!-- Tailwindカスタマイズ設定 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'xs': '360px',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- メインのアプリケーションコード -->
+    <script type="text/babel" src="scripts/app.js"></script>
+</body>
+</html>
