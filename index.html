@@ -88,41 +88,63 @@
                 setExpandedTournaments(prev => ({...prev, [key]: !prev[key]}));
             }, []);
 
-            const events = [
-                {
-                    date: '2025.02.21',
-                    tournaments: [
-                        { time: '15:00', type: 'NLH', id: '#02', name: 'Warm-up', buyin: '¥15,000', chips: '30,000 Chips' },
-                        { time: '18:00', type: 'NLH', id: '#01', name: 'Main Event / Day 1A', buyin: '1 Ticket + ¥7,000 or ¥70,000', chips: '50,000 Chips' },
-                        { time: '19:00', type: 'NLH', id: '#03', name: "Lucky 7's", buyin: '¥7,700', chips: '20,000 Chips' },
-                        { time: '20:00', type: 'PLO', id: '#04', name: 'Kick-off', buyin: '¥15,000', chips: '30,000 Chips' },
-                        { time: '22:00', type: 'NLH', id: '#05', name: 'Turbo', buyin: '¥10,000', chips: '20,000 Chips' },
-                        { time: '24:00', type: 'NLH', id: '#06', name: 'Hyper', buyin: '¥8,000', chips: '15,000 Chips' }
-                    ]
-                },
-                {
-                    date: '2025.02.22',
-                    tournaments: [
-                        { time: '11:00', type: 'NLH', id: '#01', name: 'Main Event / Day 1B', buyin: '1 Ticket + ¥7,000 or ¥70,000', chips: '50,000 Chips' },
-                        { time: '15:00', type: 'NLH', id: '#07', name: 'Builder', buyin: '¥15,000', chips: '25,000 Chips' },
-                        { time: '17:00', type: 'NLH', id: '#01', name: 'Main Event / Day 1C Turbo', buyin: '1 Ticket + ¥7,000 or ¥70,000', chips: '50,000 Chips' }
-                    ]
-                },
-                {
-                    date: '2025.02.23',
-                    tournaments: [
-                        { time: '11:00', type: 'NLH', id: '#01', name: 'Main Event / Day 2', buyin: '-', chips: '-' },
-                        { time: '11:00', type: 'NLH', id: '#14', name: 'Poker Players Championship / Day 1', buyin: '¥25,000', chips: '30,000 Chips' }
-                    ]
-                },
-                {
-                    date: '2025.02.24',
-                    tournaments: [
-                        { time: '11:00', type: 'NLH', id: '#14', name: 'Poker Players Championship / Day 2', buyin: '-', chips: '-' },
-                        { time: '11:00', type: 'NLH', id: '#23', name: 'Megastack', buyin: '¥15,000', chips: '30,000 Chips' }
-                    ]
-                }
-            ];
+              const events = [
+    {
+      date: '2025.02.21',
+      tournaments: [
+        { time: '15:00', regClose: 'TBD', type: 'NLH', id: '#02', name: 'Warm-up', buyin: '¥15,000', chips: '30,000 Chips' },
+        { time: '18:00', regClose: 'TBD', type: 'NLH', id: '#01', name: 'Main Event / Day 1A', buyin: '1 Ticket + ¥7,000 or ¥70,000', chips: '50,000 Chips' },
+        { time: '19:00', regClose: 'TBD', type: 'NLH', id: '#03', name: 'Lucky 7\'s', buyin: '¥7,700', chips: '20,000 Chips' },
+        { time: '20:00', regClose: 'TBD', type: 'PLO', id: '#04', name: 'Kick-off', buyin: '¥15,000', chips: '30,000 Chips' },
+        { time: '22:00', regClose: 'TBD', type: 'NLH', id: '#05', name: 'Turbo', buyin: '¥10,000', chips: '20,000 Chips' },
+        { time: '24:00', regClose: 'TBD', type: 'NLH', id: '#06', name: 'Hyper', buyin: '¥8,000', chips: '15,000 Chips' },
+        { time: '25:00', regClose: 'TBD', type: 'NLH', id: '#16(s)', name: 'Satellite to BYBIT1000 at 1/14', buyin: '¥8,000', chips: '10,000 Chips' }
+      ]
+    },
+    {
+      date: '2025.02.22',
+      tournaments: [
+        { time: '11:00', regClose: 'TBD', type: 'NLH', id: '#01', name: 'Main Event / Day 1B', buyin: '1 Ticket + ¥7,000 or ¥70,000', chips: '50,000 Chips' },
+        { time: '15:00', regClose: 'TBD', type: 'NLH', id: '#07', name: 'Builder', buyin: '¥15,000', chips: '25,000 Chips' },
+        { time: '17:00', regClose: 'TBD', type: 'NLH', id: '#01', name: 'Main Event / Day 1C Turbo', buyin: '1 Ticket + ¥7,000 or ¥70,000', chips: '50,000 Chips' },
+        { time: '20:00', regClose: 'TBD', type: 'NLH', id: '#08', name: 'Mystery Bounty', buyin: '¥20,000', chips: '30,000 Chips' },
+        { time: '20:00', regClose: 'TBD', type: 'PLO', id: '#09', name: 'Night', buyin: '¥15,000', chips: '30,000 Chips' },
+        { time: '22:00', regClose: 'TBD', type: 'NLH', id: '#10', name: 'BYBIT500', buyin: '¥50,000', chips: '30,000 Chips' },
+        { time: '22:00', regClose: 'TBD', type: 'NL', id: '#11', name: 'Super Hold\'em', buyin: '¥10,000', chips: '20,000 Chips' },
+        { time: '24:00', regClose: 'TBD', type: 'PLO', id: '#12', name: 'Hi/Lo 8 or Better', buyin: '¥12,000', chips: '30,000 Chips' },
+        { time: '25:00', regClose: 'TBD', type: 'NLH', id: '#13', name: 'Hyper', buyin: '¥8,000', chips: '15,000 Chips' },
+        { time: '26:00', regClose: 'TBD', type: 'NLH', id: '#16(s)', name: 'Satellite to BYBIT1000 at 1/14', buyin: '¥8,000', chips: '10,000 Chips' }
+      ]
+    },
+    {
+      date: '2025.02.23',
+      tournaments: [
+        { time: '11:00', regClose: '-', type: 'NLH', id: '#01', name: 'Main Event / Day 2', buyin: '-', chips: '-' },
+        { time: '11:00', regClose: 'TBD', type: 'NLH', id: '#14', name: 'Poker Players Championship / Day 1', buyin: '¥25,000', chips: '30,000 Chips' },
+        { time: '16:00', regClose: 'TBD', type: 'NLH', id: '#15', name: 'Superstack', buyin: '¥20,000', chips: '40,000 Chips' },
+        { time: '18:00', regClose: 'TBD', type: 'NLH', id: '#16', name: 'BYBIT1000', buyin: '¥100,000', chips: '50,000 Chips' },
+        { time: '19:00', regClose: 'TBD', type: 'NLH', id: '#17', name: 'Tag Team', buyin: '¥20,000', chips: '40,000 Chips' },
+        { time: '20:00', regClose: 'TBD', type: 'MIX', id: '#18', name: '2-7TD & Badugi', buyin: '¥15,000', chips: '40,000 Chips' },
+        { time: '21:00', regClose: 'TBD', type: 'NLH', id: '#19', name: 'Nightstack', buyin: '¥15,000', chips: '30,000 Chips' },
+        { time: '22:00', regClose: 'TBD', type: 'NLH', id: '#20', name: 'Tag Team Turbo', buyin: '¥14,000', chips: '30,000 Chips' },
+        { time: '24:00', regClose: 'TBD', type: 'NLH', id: '#21', name: 'Turbo', buyin: '¥10,000', chips: '20,000 Chips' },
+        { time: '24:00', regClose: 'TBD', type: 'MIX', id: '#22', name: 'FL Badugi', buyin: '¥12,000', chips: '30,000 Chips' },
+        { time: '26:00', regClose: 'TBD', type: 'NLH', id: '#25(s)', name: 'Satellite to BYBIT500 at 1/8', buyin: '¥7,000', chips: '10,000 Chips' }
+      ]
+    },
+    {
+      date: '2025.02.24',
+      tournaments: [
+        { time: '11:00', regClose: '-', type: 'NLH', id: '#14', name: 'Poker Players Championship / Day 2', buyin: '-', chips: '-' },
+        { time: '11:00', regClose: 'TBD', type: 'NLH', id: '#23', name: 'Megastack', buyin: '¥15,000', chips: '30,000 Chips' },
+        { time: '12:00', regClose: 'TBD', type: 'PLO', id: '#24', name: 'Deep', buyin: '¥20,000', chips: '40,000 Chips' },
+        { time: '13:00', regClose: 'TBD', type: 'NLH', id: '#25', name: 'BYBIT500', buyin: '¥50,000', chips: '30,000 Chips' },
+        { time: '15:00', regClose: 'TBD', type: 'NLH', id: '#26', name: 'Deepstack', buyin: '¥12,000', chips: '25,000 Chips' },
+        { time: '16:00', regClose: 'TBD', type: 'PLO', id: '#27', name: 'Closer', buyin: '¥12,000', chips: '30,000 Chips' },
+        { time: '19:00', regClose: 'TBD', type: 'NLH', id: '#28', name: 'Employees', buyin: 'Staff Only', chips: '10,000 Chips' }
+      ]
+    }
+  ];
 
             const getTypeColor = (type) => {
                 switch (type) {
